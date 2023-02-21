@@ -11,8 +11,7 @@ int main(void)
 	char var[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 	int n;
 
-	n = 0;
-	while (var[n] != EOF)
+	for (n = 0; n < 8; n++)
 	{
 		_putchar(var[n]);
 	}
