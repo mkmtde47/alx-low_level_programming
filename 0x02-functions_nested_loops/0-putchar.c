@@ -15,5 +15,6 @@ int main(void)
 	{
 		_putchar(var[n]);
 	}
+	_putchar('_');
 	return (0);
 }
