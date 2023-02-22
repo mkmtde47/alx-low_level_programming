@@ -16,7 +16,7 @@ int _islower(int c)
 	int i;
 
 	i = 0;
-	while (c != alpa[i])
+	while (c != alpha[i])
 	{
 		
 	}
