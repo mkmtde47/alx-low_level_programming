@@ -3,25 +3,18 @@
 
 /**
   * print_last_digit - Pritn last digit
-  * @a: Digit
+  * @c: Variable/temp
   *
   * Return: Last digit
   */
 int print_last_digit(int c)
 {
-	int a;
-
-	if (a < 0)
+	if (c < 0)
 	{
-		a = a * (-1);
+		c = c * (-1);
 	}
-	a = c % 10;
-	_putchar('0' + a);
-	
-	if (a < 0)
-	{
-		a = a * (-1);
-	}
+	c = c % 10;
+	_putchar('0' + c);
 
-	return (a);
+	return (c);
 }
