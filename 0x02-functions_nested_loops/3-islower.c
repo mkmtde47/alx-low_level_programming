@@ -4,8 +4,7 @@
 /**
   * _islower - Function for checking lower case
   * alphabets
-  *
-  * c: int variable
+  * @c: int variable
   *
   * Return: One if lowercase, Zero if otherwise
   */
@@ -20,7 +19,7 @@ int _islower(int c)
 	i = 0;
 	while (c != alpha[i])
 	{
-		
+		i++;
 	}
 
 	if (c == alpha[i])
