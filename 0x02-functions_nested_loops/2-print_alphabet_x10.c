@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
-  * print_alphabet - Function for printing alphabets
+  * print_alphabet_x10 - Function for printing alphabets
   *
   * Return: Zero if successful
   */
-void print_alphabet(void)
+void print_alphabet_x10(void);
 {
 	char alpha[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g'
 		, 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o'
