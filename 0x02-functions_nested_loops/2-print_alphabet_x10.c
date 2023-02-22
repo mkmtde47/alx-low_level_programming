@@ -6,7 +6,7 @@
   *
   * Return: Zero if successful
   */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	char alpha[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g'
 		, 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o'
