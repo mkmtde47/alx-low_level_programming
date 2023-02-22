@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-  * int _islower - Function for checking alphabets
+  * int _isalpha - Function for checking alphabets
   *
   * Return: One if alphabet, Zero if otherwise
   */
@@ -21,7 +21,7 @@ int _isalpha(int c)
 	i = 0;
 	while (c != alpha[i] || c != alphABC[i])
 	{
-		
+		i++;
 	}
 
 	if (c == alpha[i] || c == alphABC[i])
