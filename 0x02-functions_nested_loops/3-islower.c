@@ -2,8 +2,10 @@
 #include "main.h"
 
 /**
-  * int _islower - Function for checking lower case
+  * _islower - Function for checking lower case
   * alphabets
+  *
+  * c: int variable
   *
   * Return: One if lowercase, Zero if otherwise
   */
