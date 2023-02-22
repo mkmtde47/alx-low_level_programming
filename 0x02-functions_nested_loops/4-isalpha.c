@@ -19,12 +19,12 @@ int _isalpha(int c)
 	int i;
 
 	i = 0;
-	while (c != alpha[i] || c != alphABC[i])
+	while (c != alpha[i] | c != alphABC[i])
 	{
 		i++;
 	}
 
-	if (c == alpha[i] || c == alphABC[i])
+	if (c == alpha[i] | c == alphABC[i])
 	{
 		return (1);
 	}
