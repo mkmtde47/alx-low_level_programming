@@ -6,8 +6,9 @@
   */
 void more_numbers(void)
 {
-	int numbers[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
-	int i;
+/*	int numbers[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	int numbers10[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+*/	int i;
 	int j;
 
 	i = 0;
@@ -16,9 +17,13 @@ void more_numbers(void)
 	{
 		for (i = 0; i < 15; i++)
 		{
-			_putchar(numbers[i] + '0');
+			if (i > 9)
+			{
+				_putchar('1');
+			}
+			_putchar(i % 10 + '0');
 		}
+		
 		_putchar('\n');
 	}
-	_putchar('\n');
 }
