@@ -1,16 +1,18 @@
 #include <stdio.h>
 
 /**
-  * main - Entry point
+  * main - Print the fuzz bizz test
+  * @void: No args
   * Return: Zero if successful
   */
+
 int main(void)
 {
 	int i;
 
 	for (i = 1; i < 101; i++)
 	{
-		if (i == 100)
+		if ((i == 100) && (i % 5 ==0))
 		{
 			printf("buzz");
 		}
