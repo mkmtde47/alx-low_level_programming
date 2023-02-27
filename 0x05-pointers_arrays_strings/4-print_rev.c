@@ -18,7 +18,6 @@ void print_rev(char *s)
 		if (*(s + i) != '\0')
 		{
 			_putchar(*(s + i));
-			i--;
 		}
 		i--;
 	}
