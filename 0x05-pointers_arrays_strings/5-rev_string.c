@@ -21,7 +21,7 @@ void rev_string(char *s)
 	for (i = 0; i < midpoint; i++)
 	{
 		temp = s[i];
-		s[i] = s[strln - i -1];
-		s[strln - i -1] = temp;
+		s[i] = s[strln - i - 1];
+		s[strln - i - 1] = temp;
 	}
 }
