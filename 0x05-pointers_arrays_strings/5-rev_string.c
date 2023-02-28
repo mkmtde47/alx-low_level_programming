@@ -8,6 +8,8 @@ void rev_string(char *s)
 {
 	int i;
 	int strln;
+	char temp;
+	int midpoint;
 
 	i = 0;
 	while (*(s + i) != '\0')
@@ -15,11 +17,11 @@ void rev_string(char *s)
 		i++;
 	}
 	strln = i + 1;
-	i = 0;
-	while (strln >= i)
+	midpoint = strln / 2;
+	for (i = 0; i < midpoint; i++)
 	{
-		*s = *(s + strln);
-		strln--;
+		temp = s[i];
+		s[i] = s[strln - i -1];
+		s[strln -i -1] = temp;
 	}
-	_putchar('\n');
 }
