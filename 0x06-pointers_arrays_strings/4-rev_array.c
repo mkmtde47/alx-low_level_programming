@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+  * reverse_array - Reverses integers in an array
+  * @a: Pointer to array
+  * @n: Array size
+  */
 void reverse_array(int *a, int n)
 {
 	int temp;
