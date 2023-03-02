@@ -26,6 +26,10 @@ char *cap_string(char *str)
 			*(str + i) == '{' ||
 			*(str + i) == '}')
 		{
+			if (*(str + i) == '\t')
+                	{
+				*(str + i) = 32;
+                	}
 			i++;
 			if ((*(str + i) >= 'a') && (*(str + i) <= 'z'))
 			{
