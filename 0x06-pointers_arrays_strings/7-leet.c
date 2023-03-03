@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+  * leet - Program that uses leet
+  * @str: Pointer to astring
+  * Return: str
+  */
 char *leet(char *str)
 {
 	int i;
