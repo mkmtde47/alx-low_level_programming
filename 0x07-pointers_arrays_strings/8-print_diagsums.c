@@ -1,35 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 
-/**
-  * print_diagsums - Prints the digonals sum
-  * @a: Pointer to a 2d array
-  * @size: Array size
-  */
 void print_diagsums(int *a, int size)
 {
-	int i;
-	int j;
-	int diagsum;
-	int diagsum2;
+  int i, j, sum1 = 0, sum2 = 0;
 
-	diagsum = 0;
-	diagsum2 = 0;
-	i = 0;
-	j = 0;
-	while (i < size)
-	{
-		diagsum = diagsum + a[i * size + j];
-		j++;
-		i++;
-	}
-	i = 0;
-	j = 0;
-	while (i <= size)
-	{
-		diagsum2 = diagsum + a[i * size - j];
-		j++;
-		i++;
-	}
-	printf("%d, %d\n", diagsum, diagsum2);
+  for (i = 0; i < size; i++) {
+    sum1 += a[i * size + i]; // add diagonal element from top-left to bottom-right
+    sum2 += a[i * size + (size - i - 1)]; // add diagonal element from top-right to bottom-left
+  }
+
+  printf("%d, %d\n", sum1, sum2);
 }
