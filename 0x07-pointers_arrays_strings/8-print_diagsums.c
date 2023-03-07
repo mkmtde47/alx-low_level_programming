@@ -1,14 +1,36 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+  * print_diagsums - Prints the digonals sum
+  * @a: Pointer to a 2d array
+  * @size: Array size
+  */
 void print_diagsums(int *a, int size)
 {
-  int i, sum1 = 0, sum2 = 0;
+        int i;
+        int j;
+        int diagsum;
 
-  for (i = 0; i < size; i++)
-  {
-	  sum1 += a[i * size + i];
-	  sum2 += a[i * size + (size - i - 1)];
-  }
-  printf("%d, %d\n", sum1, sum2);
+        diagsum = 0;
+        i = 0;
+        j = 0;
+        while (i < size)
+        {
+                diagsum = diagsum + a[i * size + j]; 
+                j++;
+                i++;
+        }
+        printf("%d, ", diagsum);
+        diagsum = 0;
+        i = 0;
+        j = 0;
+        while (i < size)
+        {
+                diagsum = diagsum + a[i * size - j - 1]; 
+                j++;
+                i++;
+        }
+        printf("%d", diagsum);
+        printf("\n");
 }
