@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-  * _strspn - Gets length of substring
-  * @s: Main strin
-  * @accept: Prefix
-  * Return: Lenght
+  * _strspn - Gets length of a prefix substring
+  * @s: Main string
+  * @accept: Prefix substring
+  * Return: s if successful, Null if not
   */
 unsigned int _strspn(char *s, char *accept)
 {
