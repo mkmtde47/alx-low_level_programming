@@ -27,7 +27,7 @@ void print_diagsums(int *a, int size)
         j = 0;
         while (i < size)
         {
-                diagsum2 = diagsum2 + a[i * size - j]; 
+                diagsum2 = diagsum2 + a[i * size + (size - j - 1)];
                 j++;
                 i++;
         }
