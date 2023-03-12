@@ -4,5 +4,6 @@
 #include <string.h>
 #include <stdio.h>
 
-int main(int argc, char **argv);
+int print_name(int argc, char **argv);
+int print_argc(int argc, char **argv);
 #endif
