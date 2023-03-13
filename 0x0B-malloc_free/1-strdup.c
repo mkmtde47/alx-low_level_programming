@@ -3,6 +3,7 @@
 char *_strdup(char *str)
 {
 	char *newstr;
+	int i;
 	int len = strlen(str);
 
 	newstr = malloc(sizeof(char) * len);
@@ -13,7 +14,10 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		newstr = str;
+		for (i = 0; i < len; i++)
+		{
+			newstr[i] = str[i];
+		}
 	}
 	return (newstr);
 }
