@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+  * _strdup - Function that returns a pointer to a copy of a string
+  * @str: String to be coppied
+  * Return: Pointer if successful (copy), Null if not successful
+  */
 char *_strdup(char *str)
 {
 	char *newstr;
@@ -8,7 +13,7 @@ char *_strdup(char *str)
 
 	newstr = malloc(sizeof(char) * len);
 
-	if (newstr == NULL || len == 0)
+	if (newstr == NULL || str == NULL)
 	{
 		return (NULL);
 	}
