@@ -7,13 +7,13 @@
   */
 void *malloc_checked(unsigned int b)
 {
-	char *str;
+	int *str;
 
 	str = malloc(b);
 	if (str == NULL)
 	{
-		free(str);
-		return (0);
+		*str = 98;
+		return (str);
 	}
 
 	return (str);
