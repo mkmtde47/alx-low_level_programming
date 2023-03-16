@@ -16,15 +16,7 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	if (min == NULL)
-	{
-		return (NULL);
-	}
-	if (max == NULL)
-	{
-		return (NULL);
-	}
-	sum = max - min + 1;
+	sum = max - min;
 	arr = malloc(sizeof(int) * sum);
 	if (arr == NULL)
 	{
