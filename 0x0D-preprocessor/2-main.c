@@ -2,13 +2,6 @@
 
 int main(void)
 {
-	int i;
-
-	i = 0;
-	while (__FILE__ != '\0')
-	{
-		_putchar(__FILE__ + i);
-		i++;
-	}
+	printf("%s\n", __FILE__);
 	return (0);
 }
