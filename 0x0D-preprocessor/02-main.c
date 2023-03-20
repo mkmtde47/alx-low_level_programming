@@ -2,14 +2,7 @@
 
 int main(void)
 {
-	int i;
-
-	i = 0;
-	while (*(__FILE__ + i) != '\0')
-	{
-		_putchar(*(__FILE__ + i));
-		i++;
-	}
-	_putchar('\n');
+	printf("%s", __FILE__);
+	printf("\n");
 	return (0);
 }
