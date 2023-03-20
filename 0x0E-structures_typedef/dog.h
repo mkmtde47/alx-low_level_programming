@@ -2,10 +2,12 @@
 #define MAIN_H
 
 /**
-  * dog - Structure containing information of a dog
+  * struct dog - Structure containing information of a dog
   * @name: Pointer to a char
   * @age: Variable float
   * @owner: Pointer to a char
+  *
+  * Description: This a long description for a dogs struct
   */
 struct dog
 {
@@ -13,5 +15,4 @@ struct dog
 	float age;
 	char *owner;
 };
-
 #endif
