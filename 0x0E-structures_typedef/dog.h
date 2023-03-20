@@ -5,8 +5,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct dog dog_t
-
 /**
   * struct dog - Structure containing information of a dog
   * @name: Pointer to a char
@@ -15,13 +13,15 @@ typedef struct dog dog_t
   *
   * Description: This a long description for a dogs struct
   */
-dog_t
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 };
 
-void init_dog(dog_t *d, char *name, float age, char *owner);
-void print_dog(dog_t *d);
+typedef struct dog dog_t;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 #endif
