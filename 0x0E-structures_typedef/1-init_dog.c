@@ -2,6 +2,7 @@
 
 /**
   * init_dog - Function to initialize a function
+  * struct dog - Structure of a dogs info
   * @d: Pointer to a struct
   * @name: Pointer to a string
   * @age: Float variable
