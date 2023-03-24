@@ -20,7 +20,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			i++;
 			continue;
 		}
-		printf("%d%s", va_arg(argptr, int), separator);
+		printf("%d", va_arg(argptr, int));
+		if (i == n -1)
+		{
+			break;
+		}
+		printf("%s", separator);
 		i++;
 	}
+	printf("\n");
 }
