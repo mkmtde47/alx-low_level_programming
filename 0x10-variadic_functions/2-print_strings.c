@@ -20,14 +20,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			i++;
 			continue;
 		}
-		if (argptr == NULL)
+		if (va_arg(argptr, char *) == NULL)
 		{
 			printf("(nil)");
 		}
 		else
 		{
-			/*sprintf(str, "%d", va_arg(argptr, int));*/
-			/*itoa(va_arg(argptr, int), str, 10);*/
 			printf("%s", va_arg(argptr, char *));
 		}
 		if (i == n - 1)
