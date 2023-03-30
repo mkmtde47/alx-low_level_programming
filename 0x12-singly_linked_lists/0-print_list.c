@@ -2,7 +2,7 @@
 
 /**
   * print_list - A function that prints elements of a linked list
-  * @h: Pointer to a 
+  * @h: Pointer to a node
   * Return: size of list
   */
 size_t print_list(const list_t *h)
@@ -25,5 +25,5 @@ size_t print_list(const list_t *h)
 		h = h->next;
 		i++;
 	}
-	return i;
+	return (i);
 }
