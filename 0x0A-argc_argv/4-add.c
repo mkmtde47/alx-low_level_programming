@@ -11,7 +11,7 @@
   */
 int main(int argc, char **argv)
 {
-	int sum;
+	unsigned long int sum;
 	int i;
 
 	sum = 0;
@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	{
 		while (i < argc)
 		{
-			if (isdigit(*argv[i]))
+			if (isdigit(*argv[i]) && *argv[i] >= 0)
 			{
 				sum = sum + atoi(argv[i]);
 			}
@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 			i++;
 		}
 	}
-	printf("%d", sum);
+	printf("%lu", sum);
 	printf("\n");
 	return (0);
 }
