@@ -4,7 +4,7 @@
   * insert_nodeint_at_index - A function that adds the nth node at n
   * @head: Pointer to a pointer
   * @idx: index of list
-  * @n: 
+  * @n: Value of int
   * Return: nth node else null
   */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
@@ -26,7 +26,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			if (count == idx - 1)
 			{
 				new = malloc(sizeof(listint_t));
-				if (new ==NULL)
+				if (new == NULL)
 				{
 					free(new);
 					return (NULL);
