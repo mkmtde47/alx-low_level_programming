@@ -19,5 +19,9 @@ size_t print_listint(const listint_t *h)
 			count++;
 		}
 	}
+	else
+	{
+		printf("(nil)\n");
+	}
 	return (count);
 }
