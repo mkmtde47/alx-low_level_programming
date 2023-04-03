@@ -6,13 +6,12 @@
   * @index: index of list
   * Return: nth node else null
   */
-
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	listint_t *current;
 	unsigned int count;
 
-	count = 1;
+	count = 0;
 	if (head == NULL)
 	{
 		return (NULL);
@@ -20,13 +19,13 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	else
 	{
 		current = head;
-		while (current != NULL && count < index + 1)
+		while (current != NULL && count <= index)
 		{
-			current = current->next;
 			if (count == index)
 			{
 				return (current);
 			}
+			current = current->next;
 			count++;
 		}
 		return (NULL);
