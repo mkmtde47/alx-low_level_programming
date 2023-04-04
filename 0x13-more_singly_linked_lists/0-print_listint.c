@@ -22,7 +22,7 @@ size_t print_listint(const listint_t *h)
 	}
 	else
 	{
-		printf("(nil)\n");
+		/*printf("(nil)\n");*/
 		return (0);
 	}
 	return (count);
