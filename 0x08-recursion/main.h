@@ -17,4 +17,5 @@ int square_root(int num, int low, int high);
 int is_prime(int n, int divisor);
 int is_palindrome(char *s);
 int palindrome(char *s, int starts, int ends);
+int wildcmp(char *s1, char *s2);
 #endif
