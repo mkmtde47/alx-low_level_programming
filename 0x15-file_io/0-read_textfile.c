@@ -18,17 +18,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-
-	while (!feof(fp))
+	while ((letter = fgetc(fp)) != EOF)
 	{
-		letter = fgetc(fp);
-		if (letter == '\0')
+		/*letter = fgetc(fp);*/
+		if (count == letters)
 		{
 			break;
-		}
-		if (count > letters - 1)
-		{
-			return (count);
 		}
 		_putchar(letter);
 		count++;
@@ -37,7 +32,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	_putchar('\n');
 	fclose(fp);
 	return (count);
 }
