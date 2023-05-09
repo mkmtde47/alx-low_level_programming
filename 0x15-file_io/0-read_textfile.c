@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * read_textfile - A function that reads and prints a .txt file
+ * @filename: Pointer to a string.
+ * @letters: Unsigned int, number of letters read
+ * Return: Count
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fp;
@@ -10,7 +16,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fp = fopen(filename, "r");
 	if (fp == NULL || filename == NULL)
 	{
-		return(0);
+		return (0);
 	}
 
 	while (!feof(fp))
